@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.back_learn{
+    background-color: aquamarine;
+    color: rgb(11, 79, 79);
+}
