@@ -20,3 +20,33 @@
 
 // firstName = "Frost";
 // console.log(firstName)
+
+
+//-----------------------------------------------------------
+// rule for naming variable
+
+// you cannot start with number 
+
+// example :- 
+// 1value (invalid)
+// value1 (nvalid)
+
+// var value = 2
+// console.log(value)
+
+// you can use only undersore_ or dollar symbol
+// first_name(valid)
+// _firstname(valid)
+
+// first$name (valid)
+// $firstname (valid)
+
+// you cannot use spaces
+// first name (invalid)
+
+//Convention
+//Start with small letter and use camleCase
+
+
+
+
