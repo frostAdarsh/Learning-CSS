@@ -74,5 +74,19 @@
 // console.log(firstName[firstName.length-1])
 
 //-------------------------------------------------------------------
+// String are immutable
+//trim() is will give  new string and remove extra spaces 
+
+// let firstName = "     Adarsh    ";
+// console.log(firstName.length)
+// firstName = firstName.trim();
+// console.log(firstName.length)
+// slice() it will start from 0 to n-1
+// let firstName = "adarsh";
+// let newString = firstName.slice(0,3)
+// console.log(newString)
+
+// some other useful string method are toUpperCase() and toLowerCase() 
+
 
 
