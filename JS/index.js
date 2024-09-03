@@ -47,6 +47,14 @@
 //Convention
 //Start with small letter and use camleCase
 
+//-------------------------------------------------------------------
 
+// let keyword
+// declear variable with let keyword
+
+// let firstName = "Adarsh"
+// console.log(firstName)
+
+//-----------------------------------------------------------
 
 
