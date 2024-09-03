@@ -62,6 +62,17 @@
 // const pi =3.14;
 // console.log(pi);
 
+//---------------------------------------------------------------------
 
+// String indexing
+
+// let firstName = "Adarsh";
+// console.log(firstName[4])
+//length of string
+// console.log(firstName.length)
+// Last Index of string
+// console.log(firstName[firstName.length-1])
+
+//-------------------------------------------------------------------
 
 
