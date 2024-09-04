@@ -117,8 +117,19 @@
 // console.log(typeof c)
 
 //---------------------------------------------------------------
+// Falsy and truthy
 
+//Falsy value
 
+//false
+//""
+//null
+//undefined
+//0
+
+// Truthy value 
+// "abc" 
+// -1 and 1,2 any number
 
 
 
