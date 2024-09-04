@@ -88,5 +88,37 @@
 
 // some other useful string method are toUpperCase() and toLowerCase() 
 
+//-----------------------------------------------------------------
+
+// typeof operator
+
+// data type (primitive data type)
+// String
+// Number
+// Boolean
+// undefined
+// null
+// BigInt
+// Symbol
+
+// let age = 22;
+// let firstName = 'harshit';
+// console.log(typeof(age))
+
+// convert number to string
+// age = age+ "";
+// console.log(typeof(age))
+// convert string to number
+// let myStr = +"34";
+// console.log(typeof myStr) 
+ 
+// let num = 12;
+// c =(String(num))
+// console.log(typeof c)
+
+//---------------------------------------------------------------
+
+
+
 
 
