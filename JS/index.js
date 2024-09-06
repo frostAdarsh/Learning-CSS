@@ -131,5 +131,21 @@
 // "abc" 
 // -1 and 1,2 any number
 
+//-------------------------------------------------------------
 
+// how to clone array
+// how to concatenate two array
+
+// let array2 = array1.slice(0)
+// let array2 = [].concat(array1)
+// new way spread operator
+// let array2 = [...array1,"item3","item4"]
+
+// let array1 = ["item1","item2"];
+// let array3 =["item3","item4","item5"]
+// let array2 = [...array1,...array3]
+// array1.push("item3")
+
+// console.log(array1)
+// console.log(array2)
 
