@@ -160,3 +160,10 @@
 // console.log(fruits2);
 
 //-----------------------------------------------------------
+// experiment one
+// const m = [1,2,3,4,5,6]
+
+// let a = [...m]
+// for(let i=0;i<a.length;i++){
+//     console.log(a[i])
+// }
