@@ -192,4 +192,18 @@
 // person["gender"] = "male"
 // console.log(person)
 
+//--------------------------------------------------------
+// difference between dot and bracket notaion
+
+// const key = "email";
+// const person = {
+//     name: "harshit",
+//     age:22,
+//     hobbies:["guitar","sleeping","listening music"]
+// }
+// person[key] = "adarshknight@gmail.com"
+// console.log(person)
+
+//--------------------------------------------------------
+
 
