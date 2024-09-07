@@ -4,8 +4,8 @@
 
 // intor to variables
 
-// variables can store some information 
-// we can use that information later 
+// variables can store some information
+// we can use that information later
 // we can change that information later
 
 // declare a variable
@@ -21,13 +21,12 @@
 // firstName = "Frost";
 // console.log(firstName)
 
-
 //-----------------------------------------------------------
 // rule for naming variable
 
-// you cannot start with number 
+// you cannot start with number
 
-// example :- 
+// example :-
 // 1value (invalid)
 // value1 (nvalid)
 
@@ -75,7 +74,7 @@
 
 //-------------------------------------------------------------------
 // String are immutable
-//trim() is will give  new string and remove extra spaces 
+//trim() is will give  new string and remove extra spaces
 
 // let firstName = "     Adarsh    ";
 // console.log(firstName.length)
@@ -86,7 +85,7 @@
 // let newString = firstName.slice(0,3)
 // console.log(newString)
 
-// some other useful string method are toUpperCase() and toLowerCase() 
+// some other useful string method are toUpperCase() and toLowerCase()
 
 //-----------------------------------------------------------------
 
@@ -110,8 +109,8 @@
 // console.log(typeof(age))
 // convert string to number
 // let myStr = +"34";
-// console.log(typeof myStr) 
- 
+// console.log(typeof myStr)
+
 // let num = 12;
 // c =(String(num))
 // console.log(typeof c)
@@ -127,8 +126,8 @@
 //undefined
 //0
 
-// Truthy value 
-// "abc" 
+// Truthy value
+// "abc"
 // -1 and 1,2 any number
 
 //-------------------------------------------------------------
@@ -169,12 +168,12 @@
 // }
 
 //-------------------------------------------------------------
-// Objects 
+// Objects
 
 // objects reference type
 // array are good but not sufficient
-// for real world data 
-// objects store key value pairs 
+// for real world data
+// objects store key value pairs
 // objects dont have index
 
 // how to create objects
@@ -216,3 +215,17 @@
 // for(let key in person){
 //     console.log(`${key} :${person[key]}`)
 // }
+
+//------------------------------------------------------
+// object inside array
+// very useful in real world applications
+
+const users = [
+  { userId: 1, firstName: "harstit", gender: "male" },
+  { userId: 2, firstName: "Adarsh", gender: "male" },
+  { userId: 3, firstName: "Max", gender: "male" },
+];
+
+for(let user of users){
+    console.log(user.firstName)
+}
