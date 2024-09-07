@@ -206,4 +206,13 @@
 
 //--------------------------------------------------------
 
+// how to iterate object
+// const person = {
+//     name: "harshit",
+//     age:22,
+//    "person hobbies":["guitar","sleeping","listening music"]
+// }
 
+// for(let key in person){
+//     console.log(`${key} :${person[key]}`)
+// }
