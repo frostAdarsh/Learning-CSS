@@ -167,3 +167,29 @@
 // for(let i=0;i<a.length;i++){
 //     console.log(a[i])
 // }
+
+//-------------------------------------------------------------
+// Objects 
+
+// objects reference type
+// array are good but not sufficient
+// for real world data 
+// objects store key value pairs 
+// objects dont have index
+
+// how to create objects
+
+// const person = {
+//     name: "harshit",
+//     age:22,
+//     hobbies:["guitar","sleeping","listening music"]
+// }
+// console.log(person)
+// console.log(person.hobbies)
+// // person.gender ="male";
+
+// console.log(person["age"])
+// person["gender"] = "male"
+// console.log(person)
+
+
