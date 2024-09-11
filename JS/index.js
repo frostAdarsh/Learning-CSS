@@ -237,7 +237,7 @@
 // const numbers = [4,2,5,8];
 
 // function myfunc(number,index){
-//    console.log(`index is ${index} number is ${number}`)  
+//    console.log(`index is ${index} number is ${number}`)
 // }
 // numbers.forEach(myfunc)
 
@@ -270,7 +270,7 @@
 // const square = function(number){
 //   return number*number;
 // }
-// we can use arrow  function also 
+// we can use arrow  function also
 // const squareNumber = numbers.map(function(number){
 //   return number*number
 // })
@@ -290,4 +290,14 @@
 
 //------------------------------------------------------------
 
+// filter method
 
+// const numbers = [1, 2, 3, 4, 5, 6];
+// const isOdd = function(number){
+//   return number%2!==0;
+// }
+
+// const oddNumbers = numbers.filter(function (number) {
+//   return number % 2 !== 0;
+// });
+// console.log(oddNumbers);
