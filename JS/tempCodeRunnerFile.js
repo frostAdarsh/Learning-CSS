@@ -1,2 +1,3 @@
-const pi =3.14;
-console.log(pi);
+numbers.forEach(function(number){
+  console.log(number*2)
+})

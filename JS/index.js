@@ -220,12 +220,49 @@
 // object inside array
 // very useful in real world applications
 
-const users = [
-  { userId: 1, firstName: "harstit", gender: "male" },
-  { userId: 2, firstName: "Adarsh", gender: "male" },
-  { userId: 3, firstName: "Max", gender: "male" },
-];
+// const users = [
+//   { userId: 1, firstName: "harstit", gender: "male" },
+//   { userId: 2, firstName: "Adarsh", gender: "male" },
+//   { userId: 3, firstName: "Max", gender: "male" },
+// ];
 
-for(let user of users){
-    console.log(user.firstName)
-}
+// for(let user of users){
+//     console.log(user.firstName)
+// }
+
+//-----------------------------------------------------
+
+// important array methods
+// Foreach method
+// const numbers = [4,2,5,8];
+
+// function myfunc(number,index){
+//    console.log(`index is ${index} number is ${number}`)  
+// }
+// numbers.forEach(myfunc)
+
+// numbers.forEach(function(number,index){
+//   console.log(`index is ${index} number is ${number}`)
+// })
+
+// numbers.forEach(function(number){
+//   console.log(number*2)
+// })
+
+// const users =[
+//   {firstName:"harshit",age:23},
+//   {firstName:"mohit",age:21},
+//   {firstName:"nitish",age:22},
+//   {firstName:"garima",age:20},
+// ]
+// user.forEach((user)=>{
+//   console.log(user.firstName)
+// })
+//Anonymous function
+// users.forEach(function(user){
+//   console.log(user.firstName)
+// })
+
+//----------------------------------------------------
+
+
