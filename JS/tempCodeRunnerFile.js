@@ -1,3 +1,2 @@
-numbers.forEach(function(number){
-  console.log(number*2)
-})
+console.log(person);
+// console.log(person.get(1));

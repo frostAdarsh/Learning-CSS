@@ -322,16 +322,15 @@
 // }, 0);
 // console.log(totalAmount);
 
-
 //-----------------------------------------------------
 //Set----------------------------------------------
 
 // Set (it is iterable)
 // store Data
 // sets also have its own methods
-// No index-based access 
-// Order is not guranteed 
-// unique items only (no duplicates allowed) 
+// No index-based access
+// Order is not guranteed
+// unique items only (no duplicates allowed)
 
 // const items = ["item1",'item2','item3'];
 // const numbers = new Set();
@@ -359,3 +358,36 @@
 //     length++;
 // }
 // console.log(length)
+
+//--------------------------------------------------------
+//----------------------Maps---------------
+
+// map is iterable
+// store data in ordered fashion
+// store key vlaue pair (like object)
+// duplicate keys are not allowed like objects
+
+// difference between map and objects
+
+// objects can only have string or symbol as key
+
+// in maps you can use anything as key
+// like array,number,string
+
+// const person = new Map();
+// person.set("firstName", "Adarsh");
+// person.set("age", 9);
+// person.set(1, "one");
+// person.set([1, 2, 3], "one");
+// person.set({ 1: "one" }, "one");
+// console.log(person);
+// console.log(person.get(1));
+// for(let key of person.keys()){
+//     console.log(key,person.get(key))
+// }
+
+// for(let [key,value] of person){
+//     console.log(key,value)
+// }
+
+
