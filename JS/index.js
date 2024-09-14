@@ -390,4 +390,14 @@
 //     console.log(key,value)
 // }
 
+//------------------------------------------------------------
+// Optional chaining
+// this ? say you have value it proceed futher if no it will return undifine
 
+// const user = {
+//   firstName: "Adarsh",
+//   address: { houseNumber: "12345" },
+// };
+
+// console.log(user?.firstName);
+// console.log(user?.address?.houseNumber);
