@@ -401,3 +401,77 @@
 
 // console.log(user?.firstName);
 // console.log(user?.address?.houseNumber);
+
+//-------------------------------------------------
+// methods
+// function inside object
+// this mean object which itself
+
+// const person ={
+//     firstName : "Adarsh",
+//     age: 18,
+//     about:function(){
+//         console.log(`person name is ${this.firstName} and age is ${this.age}`)
+//     }
+// }
+// person.about()
+
+// function personInfo() {
+//   console.log(`person name is ${this.firstName} and age is ${this.age}`);
+// }
+
+// const person1 ={
+//     firstName:'Adarsh',
+//     age:48,
+//     about:personInfo
+// }
+// const person2 ={
+//     firstName:'harshit',
+//     age:28,
+//     about:personInfo
+// }
+// const person3 ={
+//     firstName:'Mohit',
+//     age:18,
+//     about:personInfo
+// }
+
+// person1.about()
+// person2.about()
+// person3.about()
+
+//--------------------------------------------------------------
+// this is window object
+// console.log(this)
+// console.log(window)
+
+//-------------------------------------------------------------
+
+//------------------Call--------------------------
+// const about = function (hobby,code) {
+//   console.log(this.firstName, this.age,hobby,code);
+// };
+// const user1 = {
+//   firstName: "Adarsh",
+//   age: 18,
+//   about: function () {
+//     console.log(this.firstName, this.age);
+//   },
+// };
+// const user2 = {
+//   firstName: "harshit",
+//   age: 28,
+// };
+
+// user1.about.call(user2);
+//-----------------------------about
+// about.call(user1,"game","great")
+// apply
+// about.apply(user1,["game","nice"])
+//---------------------------------bind
+// const func = about.bind(user2,"guitar","bach")
+// func()
+
+
+//-----------------------------------------------------------
+
