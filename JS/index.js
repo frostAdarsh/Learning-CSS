@@ -475,3 +475,23 @@
 
 //-----------------------------------------------------------
 
+// compilation
+// code execution
+//why compilation
+//how javascript code executes
+// what is global exection context 
+// what is local exection context
+
+//-----------------------------------------------------
+// closures ----------------------------------
+// function can return function
+
+function outerFunction(){
+    function innerFunction(){
+        console.log('hello world')
+    }
+    return innerFunction
+}
+
+const ans = outerFunction();
+ans()
