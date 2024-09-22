@@ -486,12 +486,12 @@
 // closures ----------------------------------
 // function can return function
 
-function outerFunction(){
-    function innerFunction(){
-        console.log('hello world')
-    }
-    return innerFunction
-}
+// function outerFunction(){
+//     function innerFunction(){
+//         console.log('hello world')
+//     }
+//     return innerFunction
+// }
 
-const ans = outerFunction();
-ans()
+// const ans = outerFunction();
+// ans()
