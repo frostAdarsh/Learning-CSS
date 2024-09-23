@@ -472,14 +472,13 @@
 // const func = about.bind(user2,"guitar","bach")
 // func()
 
-
 //-----------------------------------------------------------
 
 // compilation
 // code execution
 //why compilation
 //how javascript code executes
-// what is global exection context 
+// what is global exection context
 // what is local exection context
 
 //-----------------------------------------------------
@@ -495,3 +494,90 @@
 
 // const ans = outerFunction();
 // ans()
+
+//---------------------------------------------------
+//DOM
+// console.dir(document);
+
+// -------------select element using get element by id-------------------
+
+// const mainHeading = (document.getElementById("main-heading"))
+// console.log(mainHeading)
+
+// ------------select element using query selector -------------------
+
+//  const mainHeading = (document.querySelector("#main-heading"))
+//  const header = (document.querySelector(".header"))
+// //  const navItem = (document.querySelector(".nav-item"))
+//  const navItem = (document.querySelectorAll(".nav-item"))
+//  console.log(navItem)
+
+//--------------------change text-------------------
+// textContent and innerText
+// const mainHeading = document.getElementById('main-heading')
+// console.log(mainHeading.textContent)
+// console.log(mainHeading.innerText)
+// mainHeading.textContent = "this is somthing else."
+// console.log(mainHeading.textContent)
+
+// -------------------------change the style of elements--------
+
+// const mainHeading = document.querySelector('div.headline h2')
+// console.log(mainHeading.style);
+// mainHeading.style.backgroundColor = "blue";
+// mainHeading.style.border = "20px solid green";
+
+//----------------------------- get and set attrubutes------
+
+// const link = document.querySelector("a");
+// console.log(link.getAttribute("href").slice(1));
+
+// link.setAttribute("href","https://google.com");
+// console.log(link.getAttribute("href"))
+
+// const inputElement = document.querySelector(".form-todo input");
+// console.log(inputElement.getAttribute('type'))
+
+//--------get multiple element using getElements by class name---
+//-----------get multiple element ites using querySelectorAll----
+
+// const navItem = document.getElementsByClassName("nav-item") // HTMLCollection
+// console.log(navItem)
+// const navItem = document.querySelectorAll(".nav-item")//Node list
+// console.log(navItem[0])
+
+//----------------loop-----------
+// Simple loop
+// for of loop
+// forEach
+// HTML Collection-----
+// const navItems = document.getElementsByTagName("a");
+
+// for(let i=0;i<navItems.length;i++){
+//     const navItem = navItems[i];
+//     navItem.style.backgroundColor = "black";
+//     navItem.style.color="red";
+//     navItem.style.fontWeight="bold";
+// }
+
+// for(let navItem of navItems){
+//     navItem.style.backgroundColor = "black";
+//     navItem.style.color="red";
+//     navItem.style.fontWeight="bold";
+// }
+// ------same but one thing nodelist can work rhis foreach methon not with HTML collections---------
+
+// const navItems = document.querySelectorAll("a");
+
+// navItems.forEach((navItem)=>{
+//     navItem.style.backgroundColor = "black";
+//         navItem.style.color = "red";
+//         navItem.style.fontWeight = "bold";
+// })
+// ------------------------------------innerHTML---------
+
+// const headline = document.querySelector(".headline");
+// console.log(headline);
+// headline.innerHTML = "<h1>Inner html changed </h1>";  // First change
+// headline.innerHTML += "<button class = \"btn\">Learn more</button>";  // Add the button without overwriting
+

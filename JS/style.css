@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -12,7 +12,7 @@ body {
 
 a {
   text-decoration: none;
-  color: white;
+  color: green;
 }
 
 .header {
@@ -22,7 +22,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
+  color: rgb(11, 69, 11);
 }
 .bg-dark {
   background: #000;
@@ -111,9 +111,9 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-.todo-btn {
+.todo-btn { */
   /* min-height: 100%; */
-  padding: 0.5rem 1rem;
+  /* padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
@@ -154,4 +154,4 @@ a {
   display: block;
   margin: auto;
   margin-top: 1rem;
-}
+} */
