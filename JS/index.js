@@ -581,3 +581,108 @@
 // headline.innerHTML = "<h1>Inner html changed </h1>";  // First change
 // headline.innerHTML += "<button class = \"btn\">Learn more</button>";  // Add the button without overwriting
 
+//--------------------------------traverse dom tree-----
+
+// const rootNode = document.getRootNode();
+// console.log(rootNode.childNodes);
+
+// const rootNode = document.getRootNode();
+
+//Child
+// const htmlElementNode = rootNode.childNodes[6];
+// console.log(htmlElementNode.childNodes)
+// NodeList(3) [head, text, body]
+// const headElementNode = htmlElementNode.childNodes[0];
+// const textNode1 = htmlElementNode.childNodes[1];
+// const bodyElementNode = htmlElementNode.childNodes[2];
+// console.log(bodyElementNode)
+
+//Parent
+// console.log(headElementNode.parentNode)
+//Sibling relation
+
+// console.log(headElementNode.nextSibling)
+//get next element ignore text
+
+// console.log(headElementNode.nextElementSibling)
+// console.log(headElementNode.childNodes)
+
+//------example--------
+
+// const h1 = document.querySelector("h1");
+// const body = h1.parentNode.parentNode;
+// body.style.color = "#efefef";
+// body.style.backgroundColor = "#333";
+
+//-------------------example---------
+
+// const body = document.body;
+// body.style.color = "#efefef";
+// body.style.backgroundColor = "#333"
+
+//------------example -----------
+
+// const head = document.querySelector("head");
+// const title = head.querySelector("title")
+// console.log(title.childNodes)
+
+// -------------example------------
+// const container = document.querySelector(".container");
+// console.log(container.childNodes)
+//childNodes ignore text but it give HTML collection
+// console.log(container.children);
+
+//-------------class in DOM----------
+
+// const sectionTodo = document.querySelector(".section-todo");
+// console.log(sectionTodo.classList)
+// sectionTodo.classList.add("bg-dark");
+// sectionTodo.classList.remove('container')
+// const ans = sectionTodo.classList.contains('container')
+// console.log(ans)
+// sectionTodo.classList.toggle('bg-dark')
+
+// const header = document.querySelector(".header");
+// console.log(header.classList)
+// header.classList.add('bg-dark')
+
+// ----------------------innerHTML to add html element------
+
+// const todoList = document.querySelector(".todo-list");
+// console.log(todoList.innerHTML)
+// todoList.innerHTML ="<li>New Todo</>"
+// todoList.innerHTML += "<li>New Todo</>";
+// todoList.innerHTML += "<li>Teach students</>";
+
+// -------------------document.createElement()---------------
+
+// append
+// prepend
+// remove
+// before
+// after
+
+// const newTodoItem = document.createElement("li");
+// newTodoItem.textContent ="teach students";
+// const todoList = document.querySelector(".todo-list");
+// todoList.append(newTodoItem)
+// todoList.prepend(newTodoItem)
+
+// const todo1 = document.querySelector('.todo-list');
+// todo1.remove();
+
+// const newTodoItem = document.createElement("h1");
+// newTodoItem.textContent ='teach students';
+// const todoList = document.querySelector(".todo-list");
+// todoList.before(newTodoItem);
+
+// const newTodoItem = document.createElement("h1");
+// newTodoItem.textContent ='teach students';
+// const todoList = document.querySelector(".todo-list");
+// todoList.after(newTodoItem);
+
+//------------------------------height and width------
+
+const sectionTodo = document.querySelector(".section-todo");
+const info = sectionTodo.getBoundingClientRect().height;
+console.log(info)
