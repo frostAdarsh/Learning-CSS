@@ -683,6 +683,133 @@
 
 //------------------------------height and width------
 
-const sectionTodo = document.querySelector(".section-todo");
-const info = sectionTodo.getBoundingClientRect().height;
-console.log(info)
+// const sectionTodo = document.querySelector(".section-todo");
+// const info = sectionTodo.getBoundingClientRect().height;
+// console.log(info)
+
+// ----------------------intro to event------------------------
+
+//click
+//event add karne ke 3 tarike hai
+//
+
+// const btn = document.querySelector(".btn-headline");
+// console.dir(btn);
+// btn.onclick = function(){
+//     console.log('you click me!!')
+// }
+
+// ----------------method --- addEventListener----------------
+
+// const btn = document.querySelector(".btn-headline");
+// function clickMe() {
+//   console.log("you clicked me !!!");
+// }
+// btn.addEventListener("click", function () {
+//   console.log("you clicked me !!!");
+// });
+
+// btn.addEventListener("click", () => {
+//   console.log("clicked");
+// });
+
+//-------------------------this keyword-----------------
+
+//this keyword this in case of function is itself which is call button/element/object but in arrow function it is window object or levelup object/funtion
+
+// const btn = document.querySelector(".btn-headline");
+
+// btn.addEventListener('click',function(){
+//     console.log('you click');
+//     console.log(this);
+// })
+// btn.addEventListener('click',()=>{
+//     console.log('you click');
+//     console.log(this);
+// })
+
+//---------------------Event on button------------------------------
+
+// const allButtons = document.querySelectorAll(".my-buttons button");
+
+// for (let button of allButtons) {
+//   button.addEventListener("click", function () {
+//     console.log(this);
+//   });
+// }
+
+// for (let i = 0; i < allButtons.length; i++) {
+//   allButtons[i].addEventListener("click", function () {
+//     console.log(this);
+//   });
+// }
+
+// allButtons.forEach(function (button) {
+//   button.addEventListener("click", function () {
+//     console.log(this);
+//   });
+// });
+
+//------------------------------event object---------
+
+// const firstButton = document.querySelector("#one");
+// firstButton.addEventListener("click", function (event) {
+//   console.log(event);
+// });
+
+//jab bhi mai kise bhi element pe event listener add hoga
+// js engine -- line by line execute karta hai
+//browser -- js engine + extra features
+//browser-- js engine + webApi
+
+//jab browser kp pata chala ki user ne event perform kia
+// jo hum listen kar rahe hai
+//browser----2
+//1) callback function hai vo js engine ko degi
+//2)callback function ke sath browser jo event hua hai uski information bhi dega ye info hamie ek onject ke from mai milegi
+
+// const allButtons = document.querySelectorAll(".my-buttons button");
+
+// for(let button of allButtons) {
+//   button.addEventListener("click",  (e)=> {
+//     console.log(e.currentTarget);
+//   });
+// }
+
+// const allButtons = document.querySelectorAll(".my-buttons button");
+
+// allButtons.forEach((button) => {
+//   button.addEventListener("click", (e) => {
+//     console.log(e.currentTarget.textContent);
+//   });
+// });
+
+// ------------------littel practice with click event--------------------
+
+// const allButtons = document.querySelectorAll(".my-buttons button");
+
+// allButtons.forEach((button) => {
+//   button.addEventListener("click", (e) => {
+//     e.target.style.color = "green";
+//     e.target.style.backgroundColor = "yellow";
+//   });
+// });
+
+//--------------------------example 2------------
+
+// const mainButton = document.getElementById("two");
+// const body = document.body;
+// const currentColor = document.querySelector(".current-color");
+
+// function randomColorGenerator() {
+//   const red = Math.floor(Math.random() * 256);
+//   const green = Math.floor(Math.random() * 256);
+//   const blue = Math.floor(Math.random() * 256);
+//   const randomColor = `rgb(${red},${green},${blue})`;
+//   return randomColor;
+// }
+// mainButton.addEventListener("click", () => {
+//   const randomColor = randomColorGenerator();
+//   body.style.backgroundColor = randomColor;
+//   currentColor.textContent = randomColor;
+// });
