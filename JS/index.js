@@ -813,3 +813,22 @@
 //   body.style.backgroundColor = randomColor;
 //   currentColor.textContent = randomColor;
 // });
+
+//-------------------------Keypress event--------------
+//---------------------------mouseover event----------
+
+
+// const body = document.body;
+
+// body.addEventListener('keypress',(e)=>{
+//   console.log(e.key)
+// });
+
+// const mainButton = document.querySelector('.btn-headline');
+
+// mainButton.addEventListener("mouseover",()=>{
+//   console.log("mouseover event")
+// })
+
+//  
+
