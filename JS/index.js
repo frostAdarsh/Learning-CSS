@@ -817,7 +817,6 @@
 //-------------------------Keypress event--------------
 //---------------------------mouseover event----------
 
-
 // const body = document.body;
 
 // body.addEventListener('keypress',(e)=>{
@@ -830,5 +829,111 @@
 //   console.log("mouseover event")
 // })
 
-//  
+//
+
+//--------------------------------------------------------------------
+
+//event bubbling/event propogation
+//event capturing
+//event delegation
+//-------------------first capture than bubbling
+
+// const grandparent = document.querySelector(".grandparent");
+// const parent = document.querySelector(".parent");
+// const child = document.querySelector(".child");
+
+//--------------------------event capturing
+// child.addEventListener(
+//   "click",
+//   () => {
+//     console.log("you capture on child");
+//   },
+//   true
+// );
+// parent.addEventListener(
+//   "click",
+//   () => {
+//     console.log("you capture on parent");
+//   },
+//   true
+// );
+// grandparent.addEventListener(
+//   "click",
+//   () => {
+//     console.log("you capture on grandparent");
+//   },
+//   true
+// );
+// document.body.addEventListener(
+//   "click",
+//   () => {
+//     console.log("you capture on body");
+//   },
+//   true
+// );
+//------------------------------event bubbling
+// child.addEventListener("click", () => {
+//   console.log("you clicked on child");
+// });
+// parent.addEventListener("click", () => {
+//   console.log("you clicked on parent");
+// });
+// grandparent.addEventListener("click", () => {
+//   console.log("you clicked on grandparent");
+// });
+// document.body.addEventListener("click", () => {
+//   console.log("you clicked on body");
+// });
+
+//-------------------------event delegation
+
+// grandparent.addEventListener("click", (e) => {
+//   console.log(e.target.textContent);
+// });
+
+//------------------sychronous programming and asyncheonous programming
+//--------------------------sychronous programming
+//sychronous programming single threaded
+
+//---------------setTimeout------------------------
+
+// console.log("script start");
+
+// setTimeout(()=>{
+//   console.log("inside settimeout");
+// },1000);
+
+// for(let i=1;i<100;i++){
+//   console.log("...")
+// }
+
+// console.log("Script end")
+
+//---------------setinterval------------------------
+
+// console.log("script startr");
+// setInterval(() => {
+//   console.log(Math.random());
+// }, 1000);
+
+// console.log("script end");
+
+
+// const body = document.body;
+// const button = document.getElementById("setb");
+
+// const intervalId = setInterval(()=>{
+//   const red = Math.floor(Math.random()*256);
+//   const green = Math.floor(Math.random()*256);
+//   const blue = Math.floor(Math.random()*256);
+//   const rgb = `rgb(${red},${green},${blue})`;
+//   body.style.background = rgb
+// },1000)
+
+// button.addEventListener("click",()=>{
+//   clearInterval(intervalId);
+//   button.textContent = body.style.background
+// })
+// console.log(intervalId)
+
 
