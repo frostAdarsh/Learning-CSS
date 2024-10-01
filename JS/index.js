@@ -918,7 +918,6 @@
 
 // console.log("script end");
 
-
 // const body = document.body;
 // const button = document.getElementById("setb");
 
@@ -936,4 +935,67 @@
 // })
 // console.log(intervalId)
 
+//--------------------understand callback------
 
+// function myFunc(callback){
+//   console.log("Function is doing task 1")
+//   callback()
+// }
+
+// myFunc(()=>{
+//   console.log("function is doing task 2")
+// })
+
+// function getTwoNumberAndAdd(number1, number2, callback) {
+//   if (typeof number1 === "number" && typeof number2 === "number") {
+//     callback(number1, number2);
+//   } else {
+//     console.log("wrong Date Type");
+//   }
+// }
+
+// getTwoNumberAndAdd(4, 4, (num1,num2) => {
+//   console.log(num1 + num2);
+// });
+
+//-----callbacks ,callback hell ,pyramid of doom---------
+//------------asynchronous programming-----------
+
+// const heading1 = document.querySelector(".heading1");
+// const heading2 = document.querySelector(".heading2");
+// const heading3 = document.querySelector(".heading3");
+// const heading4 = document.querySelector(".heading4");
+// const heading5 = document.querySelector(".heading5");
+// const heading6 = document.querySelector(".heading6");
+// const heading7 = document.querySelector(".heading7");
+// // callback hell
+// setTimeout(() => {
+//   heading1.textContent = "heading1";
+//   heading1.style.color = "yellow";
+//   setTimeout(() => {
+//     heading2.textContent = "heading2";
+//     heading2.style.color = "red";
+//     setTimeout(() => {
+//       heading3.textContent = "heading3";
+//       heading3.style.color = "green";
+//       setTimeout(() => {
+//         heading4.textContent = "heading4";
+//         heading4.style.color = "blue";
+//         setTimeout(() => {
+//           heading5.textContent = "heading5";
+//           heading5.style.color = "violet";
+//           setTimeout(() => {
+//             heading6.textContent = "heading6";
+//             heading6.style.color = "purple";
+//             setTimeout(() => {
+//               heading7.textContent = "heading7";
+//               heading7.style.color = "pink";
+//             }, 1000);
+//           }, 1000);
+//         }, 1000);
+//       }, 1000);
+//     }, 1000);
+//   }, 1000);
+// }, 1000);
+
+//-------------------
