@@ -998,4 +998,185 @@
 //   }, 1000);
 // }, 1000);
 
-//-------------------
+//-------------------Promise-----------------------
+
+// const bucket = ["coffee", "chips", "salt", "vegetable", "rice"];
+
+// const friedRicePromise = new Promise((resolve, reject) => {
+//   if (
+//     bucket.includes("vegetable") &&
+//     bucket.includes("salt") &&
+//     bucket.includes("rice")
+//   ) {
+//     resolve("fried Rice");
+//   } else {
+//     reject("couldn't do it");
+//   }
+// });
+
+// friedRicePromise.then(
+//   (myFriedRice) => {
+//     console.log("lets eat", myFriedRice);
+//   },
+// //   (error) => {
+// //     console.log(error);
+// //   }
+// ).catch((error)=>{console.log(error)});
+
+//---------------------------function returnig promise--
+
+// function ricePromise() {
+//   return new Promise((resolve, reject) => {
+//     const bucket = ["coffee", "chips", "salt", "vegetable", "rice"];
+//     if (
+//       bucket.includes("vegetable") &&
+//       bucket.includes("salt") &&
+//       bucket.includes("rice")
+//     ) {
+//       resolve("fried Rice");
+//     } else {
+//       reject("couldn't do it");
+//     }
+//   });
+// }
+
+// ricePromise()
+//   .then((myFriedRice) => {
+//     console.log("lets eat", myFriedRice);
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   });
+
+// --------------------------------Promise && setTimeout----------
+
+// I want to resolve / reject promise after 2 seconds
+
+// function myPromise() {
+//   return new Promise((resolve, reject) => {
+//     const value = true;
+//     setTimeout(() => {
+//       if (value) {
+//         resolve();
+//       } else {
+//         reject();
+//       }
+//     }, 2000);
+//   });
+// }
+
+// myPromise()
+//   .then(() => {
+//     console.log("resolved");
+//   })
+//   .catch(() => {
+//     console.log("rejected");
+//   });
+
+//-------------------------------promise.resolve-----------------
+//---------------------------Promise chaining------------------------
+
+// myPromise = Promise.resolve(5).then((value) => {
+//   console.log(value);
+// });
+
+// then()
+// then method hamesha promise return karta hai
+
+// function myPromise() {
+//   return new Promise((resolve, reject) => {
+//     resolve("foo");
+//   });
+// }
+
+// myPromise()
+//   .then((value) => {
+//     console.log(value);
+//     value += "bar";
+//     return value;
+//   })
+//   .then((value) => {
+//     console.log(value);
+//     value += "baaz";
+//     return value;
+//   })
+//   .then((value) => {
+//     console.log(value);
+//   });
+
+//---------------------------example------
+
+// const heading1 = document.querySelector(".heading1");
+// const heading2 = document.querySelector(".heading2");
+// const heading3 = document.querySelector(".heading3");
+// const heading4 = document.querySelector(".heading4");
+// const heading5 = document.querySelector(".heading5");
+// const heading6 = document.querySelector(".heading6");
+// const heading7 = document.querySelector(".heading7");
+
+// function changeText(element, text, color, time) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       if (element) {
+//         element.textContent = text;
+//         element.style.color = color;
+//         resolve();
+//       } else {
+//         reject("element not found");
+//       }
+//     }, time);
+//   });
+// }
+
+// changeText(heading1, "one", "red", 1000)
+//   .then(() => {
+//     return changeText(heading2, "two", "pink", 1000);
+//   })
+//   .then(() => {
+//     return changeText(heading3, "three", "green", 1000);
+//   })
+//   .then(() => {
+//     return changeText(heading4, "four", "yellow", 1000);
+//   })
+//   .then(() => {
+//     return changeText(heading5, "five", "blue", 1000);
+//   })
+//   .then(() => {
+//     return changeText(heading6, "six", "skyblue", 1000);
+//   })
+//   .then(() => {
+//     return changeText(heading7, "seven", "orange", 1000);
+//   })
+//   .catch((error) => {
+//     alert(error);
+//   });
+
+//---------------------------------- fetch-----------
+
+// const URL = "https://jsonplaceholder.typicode.com/posts";
+
+// const whatisthis = fetch(URL)
+// console.log(whatisthis)
+
+//--------------------------------------------
+
+// fetch(URL)
+//   .then((respose) => {
+//     return respose.json();
+//   })
+//   .then((data) => {
+//     console.log(data);
+//   });
+
+//--------------------------async/await------------------------
+
+const URL = "https://jsonplaceholder.typicode.com/posts";
+async function getPost() {
+  const respose = await fetch(URL);
+  const data = await respose.json();
+  return data;
+}
+
+getPost().then((mydata) => {
+  console.log(mydata);
+});
