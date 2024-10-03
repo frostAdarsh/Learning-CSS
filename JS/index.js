@@ -1170,13 +1170,117 @@
 
 //--------------------------async/await------------------------
 
-const URL = "https://jsonplaceholder.typicode.com/posts";
-async function getPost() {
-  const respose = await fetch(URL);
-  const data = await respose.json();
-  return data;
-}
+// const URL = "https://jsonplaceholder.typicode.com/posts";
+// async function getPost() {
+//   const respose = await fetch(URL);
+//   const data = await respose.json();
+//   return data;
+// }
 
-getPost().then((mydata) => {
-  console.log(mydata);
-});
+// getPost().then((mydata) => {
+//   console.log(mydata);
+// });
+
+// ---------------------------------class--------------
+
+// class CreateUser {
+//   constructor(firstName, lastName, email, age, adderss) {
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//     this.email = email;
+//     this.age = age;
+//     this.adderss = adderss;
+//   }
+//   about() {
+//     return `${this.firstName} is ${this.age} years old`;
+//   }
+//   is18() {
+//     return this.age >= 18;
+//   }
+//   sing() {
+//     return "la la la la";
+//   }
+// }
+
+// const user1 = new CreateUser("Adarsh", "Mani", "ada@gmail.com", "36", "pata");
+// // console.log(user1.about());
+// console.log(Object.getPrototypeOf(user1))
+
+//------------------example---------------------
+
+// class Animal {
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
+//   eat() {
+//     return `${this.name} is eating`;
+//   }
+
+//   isSuperCute() {
+//     return this.age <= 1;
+//   }
+// }
+
+// const animal1 = new Animal("tom", 2);
+// console.log(animal1);
+// console.log(animal1.eat())
+
+//---------------------------------------
+
+// class Dog extends Animal{
+
+// }
+
+// const tommy = new Dog('tommy',3)
+// console.log(tommy.eat())
+//-------------------------------------------
+//----------------------super--------------------
+
+// class Dog extends Animal {
+//   constructor(name, age, speed) {
+//     super(name, age);
+//     this.speed = speed;
+//   }
+//   eat(){
+//     return `modifi ${this.name} is eating`;
+
+//   }
+//   run() {
+//     return `${this.name} is running at ${this.speed} kmph`;
+//   }
+// }
+
+// const tommy = new Dog("tommy", 3, 45);
+// console.log(tommy.run());
+// console.log(tommy.eat());
+
+//----------------------------getter and setter---------
+//-------------------static method and properties---------
+
+// class Person {
+//   constructor(firstName, lastName, age) {
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//     this.age = age;
+//   }
+//   static classInfo() {
+//     return "this is person class";
+//   }
+//   static desc = "static property";
+//   get fullname() {
+//     return `${this.firstName} ${this.lastName}`;
+//   }
+//   set fullname(fullname) {
+//     const [firstName, lastName] = fullname.split(" ");
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//   }
+// }
+
+// const person1 = new Person("Adrash", "Mani", 5);
+// console.log(person1.fullname);
+// person1.fullname = "Mani Adarsh";
+// console.log(person1.fullname);
+// console.log(Person.classInfo());
+// console.log(Person.desc);
